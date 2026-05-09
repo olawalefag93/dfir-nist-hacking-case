@@ -105,7 +105,7 @@ Browser history from Internet Explorer's `index.dat` revealed deliberate hacking
 - Googled `"hacking"`, `"what is my ip"`, `"who am i"` — classic IP obfuscation behavior
 - Downloaded NetStumbler from **netstumbler.com**
 - Downloaded Ethereal and WinPcap from **ethereal.com** and **depaul.edu security FTP**
-- Accessed a remote file at `file://4.12.220.254/Temp/yng13.bmp` — external host
+- Accessed a remote file at `file://4.12.220.254/Temp/yng13.bmp` — this indicates the suspect remotely accessed a file share on an external machine. IP `4.12.220.254` represents a potential victim system or staging server and warrants further network-level investigation
 
 ### 4. 📡 Network Reconnaissance Evidence
 
@@ -121,7 +121,7 @@ Browser history from Internet Explorer's `index.dat` revealed deliberate hacking
 
 ### 6. 🔐 High-Entropy Suspicious File
 
-`oembios.bin` (found in both `system32/` and `dllcache/`) exhibited an entropy score of **7.999987 / 8.0** — near-maximum, indicating the file is very likely **encrypted or compressed** and warrants further cryptographic analysis.
+`oembios.bin` (found in both `system32/` and `dllcache/`) exhibited an entropy score of **7.999987 / 8.0** — near-maximum. This file is a legitimate Windows OEM BIOS support file that naturally carries high entropy due to compressed firmware data. Cross-referenced against known-good hashes — **flagged and ruled out**. No malicious use confirmed.
 
 ### 7. 🔌 USB Device Connection
 
