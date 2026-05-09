@@ -19,15 +19,16 @@ dfir-nist-hacking-case/
 │   └── NIST-HC-2004-001-Report.pdf  ← Full formal IR report
 ├── screenshots/
 │   ├── CAPTURE-GUIDE.md             ← What to screenshot in Autopsy
-│   ├── 01-hash-verification.png
-│   ├── 02-autopsy-user-accounts.png
+│   ├── 01-autopsy-data-source.png
+│   ├── 02-os-accounts.png
 │   ├── 03-installed-programs.png
-│   ├── 04-prefetch-execution.png
-│   ├── 05-browser-history.png
-│   ├── 06-yahoo-identity.png
-│   ├── 07-hacking-searches.png
-│   ├── 08-netstumbler-install.png
-│   └── 09-cain-abel-execution.png
+│   ├── 04-run-programs.png
+│   ├── 05-web-history.png
+│   ├── 06-web-searches.png
+│   ├── 07-usb-device-attached.png
+│   ├── 08-extension-mismatch.png
+│   ├── 09-encryption-suspected.png
+│   └── 10-deleted-files.png
 ├── timeline/
 │   └── attack-timeline.md           ← Full chronological activity timeline
 └── methodology/
@@ -135,7 +136,40 @@ A USB device connection event was logged on **2004-08-27 at 10:08:10 EST** — t
 | `report/NIST-HC-2004-001-Report.pdf` | Full formal IR report with all findings, tables, examiner certification |
 | `timeline/attack-timeline.md` | Chronological reconstruction of all subject activity |
 | `methodology/investigation-notes.md` | My investigation approach, tools used, and process notes |
+| `screenshots/` | Autopsy evidence screenshots supporting the findings |
 | `screenshots/CAPTURE-GUIDE.md` | Autopsy screenshot guide for replication |
+
+---
+
+## Evidence Gallery
+
+### Autopsy Case and Accounts
+
+![Autopsy data source loaded](screenshots/01-autopsy-data-source.png)
+
+![OS accounts recovered in Autopsy](screenshots/02-os-accounts.png)
+
+### Program Installation and Execution
+
+![Installed programs showing hacking and reconnaissance tools](screenshots/03-installed-programs.png)
+
+![Run programs and prefetch artifacts](screenshots/04-run-programs.png)
+
+### Browser and Search Activity
+
+![Internet Explorer web history artifacts](screenshots/05-web-history.png)
+
+![Recovered web searches](screenshots/06-web-searches.png)
+
+### Notable Analysis Findings
+
+![USB device attached artifact](screenshots/07-usb-device-attached.png)
+
+![Extension mismatch findings](screenshots/08-extension-mismatch.png)
+
+![Encryption suspected findings](screenshots/09-encryption-suspected.png)
+
+![Deleted files listing](screenshots/10-deleted-files.png)
 
 ---
 
